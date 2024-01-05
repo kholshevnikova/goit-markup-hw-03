@@ -6,14 +6,56 @@ body {
 a {
   text-decoration: none;
 }
+
+img {
+}
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*------------HEADER-------------*/
 .header {
 }
+
 .header-navihation {
+  display: flex;
+  flex-grow: 1;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 156px;
+  padding-right: 156px;
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
 }
 .header-logo {
   color: var(--IRIS, #4d5ae5);
@@ -23,9 +65,14 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .header-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
+
 .header-item {
 }
 .header-nav-item {
@@ -47,6 +94,8 @@ ul {
   font-style: normal;
 }
 .header-adress-list {
+  display: flex;
+  gap: 40px;
 }
 .header-adress-item {
 }
@@ -77,6 +126,20 @@ ul {
 .hero {
   background-color: #2e2f42;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .hero-title {
   color: var(--WHITE, #fff);
   text-align: center;
@@ -84,6 +147,9 @@ ul {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 .hero-btn {
   color: var(--WHITE, #fff);
@@ -94,7 +160,12 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-btn:hover {
@@ -108,11 +179,18 @@ ul {
 /*------------ADVANTAGES-------------*/
 .advantages {
 }
+
 .advantages-title {
 }
+
 .advantages-list {
+  display: flex;
+  gap: 24px;
+  padding-left: 156px;
+  padding-right: 156px;
 }
 .advantages-item {
+  width: calc((100% - 24px * 3) / 4);
 }
 .advantages-subtitle {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -121,6 +199,7 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .advantages-text {
   color: var(--SLATE, #434455);
@@ -142,13 +221,26 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .team-list {
   background-color: #ffffff;
+  display: flex;
+  gap: 24px;
 }
+
 .team-list-item {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  padding-left: 156px;
+  padding-right: 156px;
+  width: calc((100% - 24px * 3) / 4);
 }
+
 .team-img {
 }
 .team-subtitle {
@@ -158,6 +250,7 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .team-text {
   color: var(--SLATE, #434455);
@@ -180,10 +273,14 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .portfolio-list {
+  display: block;
+  flex-wrap: wrap;
 }
 .portfolio-item {
+  width: calc((100% - 24px * 5) / 6);
 }
 .portfolio-img {
 }
@@ -193,6 +290,7 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   color: var(--SLATE, #434455);
@@ -211,6 +309,7 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 .footer-logo {
   color: var(--IRIS, #4d5ae5);
@@ -220,6 +319,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 17.5px;
 }
 .footer-span {
   color: var(--CLOUD, #f4f4fd);
@@ -229,4 +329,8 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.footer-container {
+  padding-left: 156;
+  padding-right: 156px;
 }
