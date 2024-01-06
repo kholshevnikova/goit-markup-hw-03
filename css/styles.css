@@ -55,8 +55,6 @@ p {
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-logo {
   color: var(--IRIS, #4d5ae5);
