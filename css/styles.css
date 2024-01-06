@@ -57,8 +57,6 @@ p {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  padding-left: 156px;
-  padding-right: 156px;
 }
 .header-logo {
   color: var(--IRIS, #4d5ae5);
