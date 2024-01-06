@@ -23,8 +23,7 @@ ul {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 
 img {
@@ -44,6 +43,7 @@ p {
 
 /*------------HEADER-------------*/
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-navihation {
@@ -59,7 +59,6 @@ p {
   padding-bottom: 24px;
   padding-left: 156px;
   padding-right: 156px;
-  border-bottom: 1px solid #e7e9fc;
 }
 .header-logo {
   color: var(--IRIS, #4d5ae5);
@@ -174,6 +173,9 @@ p {
   padding: 16px 32px;
   display: block;
   margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .hero-btn:hover {
@@ -250,7 +252,7 @@ p {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   padding-left: 156px;
   padding-right: 156px;
-  width: calc((100% - 24px * 3) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .team-img {
