@@ -194,9 +194,8 @@ p {
 .advantages-list {
   display: flex;
   gap: 24px;
-  padding-left: 156px;
-  padding-right: 156px;
 }
+
 .advantages-item {
   width: calc((100% - 72px) / 4);
 }
